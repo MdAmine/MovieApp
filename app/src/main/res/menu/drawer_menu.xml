@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_group_1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_drawer_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="Main" />
+        <item
+            android:id="@+id/menu_drawer_favorite"
+            android:icon="@mipmap/ic_favorite_black_24dp"
+            android:title="Favoris" />
+
+        <item
+            android:id="@+id/menu_drawer_downloaded"
+            android:icon="@mipmap/ic_file_download_black_24dp"
+            android:title="Télechargé" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_group_2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_drawer_setting"
+            android:title="Setting" />
+
+        <item
+            android:id="@+id/menu_drawer_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/menu_drawer_about"
+            android:title="About" />
+    </group>
+
+</menu>
