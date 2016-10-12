@@ -144,7 +144,6 @@ public class PopularMoviesFragment extends Fragment {
         return view;
     }
 
-
     private void setUpRecyclerView(View view) {
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
