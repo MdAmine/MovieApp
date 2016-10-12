@@ -1,5 +1,6 @@
 package com.mdamine.movieapp;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -9,13 +10,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.mdamine.movieapp.adapters.ScrollTabsAdapter;
-import com.mdamine.movieapp.fragments.BoxOfficeFragment;
+import com.mdamine.movieapp.fragments.PopularMoviesFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         tabLayout = (TabLayout) findViewById(R.id.tabs);
 
 
-        fragmentList.add(new BoxOfficeFragment());
-        titleList.add("BoxOffice");
+        fragmentList.add(new PopularMoviesFragment());
+        titleList.add("Popular");
 
         for (int i = 0; i < 3; i++) {
             fragmentList.add(new Fragment());
