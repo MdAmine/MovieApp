@@ -118,9 +118,7 @@ public class PopularMoviesFragment extends Fragment {
                 String vote_average = movie.getString("vote_average");
                 String poster_path = movie.getString("poster_path");
 
-
                 listMovies.add(new Movie(id, title, releaseDate, vote_average, poster_path));
-
             }
 
             Log.i("tag", "parse finish");
